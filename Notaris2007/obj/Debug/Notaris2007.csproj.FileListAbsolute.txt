@@ -1,0 +1,17 @@
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\bin\Debug\Notaris2007.dll
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\bin\Debug\Notaris2007.pdb
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\bin\Debug\Notaris2007.dll.manifest
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\bin\Debug\Notaris2007.vsto
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.csprojResolveAssemblyReference.cache
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.Properties.Resources.resources
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.csproj.GenerateResource.Cache
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.dll
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.pdb
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.RibbonNotaris.resources
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.form.aktakendaraan.FormPemberiFiducia_1.resources
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.form.aktakendaraan.FormObjekFiducia_3.resources
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.form.aktakendaraan.FormPenerimaFiducia_2.resources
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.form.aktakendaraan.FormSaksiFiducia_4.resources
+c:\users\root\documents\visual studio 2010\Projects\Notaris2007\Notaris2007\obj\Debug\Notaris2007.form.FormWaktu.resources
