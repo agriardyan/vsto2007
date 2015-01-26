@@ -29,19 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pekerjaan1TB = new System.Windows.Forms.TextBox();
-            this.nama1TB = new System.Windows.Forms.TextBox();
-            this.kota1TB = new System.Windows.Forms.TextBox();
-            this.tanggalLahir1DTP = new System.Windows.Forms.DateTimePicker();
-            this.nik1TB = new System.Windows.Forms.TextBox();
+            this.prefix1CB = new System.Windows.Forms.ComboBox();
+            this.alamat1TB = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tanggalKTP1DTP = new System.Windows.Forms.DateTimePicker();
+            this.nik1TB = new System.Windows.Forms.TextBox();
+            this.tanggalLahir1DTP = new System.Windows.Forms.DateTimePicker();
+            this.kota1TB = new System.Windows.Forms.TextBox();
+            this.nama1TB = new System.Windows.Forms.TextBox();
+            this.pekerjaan1TB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.prefix2CB = new System.Windows.Forms.ComboBox();
+            this.nama2TB = new System.Windows.Forms.TextBox();
+            this.alamat2TB = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.tanggalKTP2DTP = new System.Windows.Forms.DateTimePicker();
             this.nik2TB = new System.Windows.Forms.TextBox();
             this.tanggalLahir2DTP = new System.Windows.Forms.DateTimePicker();
@@ -53,16 +60,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.alamat1TB = new System.Windows.Forms.TextBox();
-            this.alamat2TB = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.prefix1CB = new System.Windows.Forms.ComboBox();
-            this.nama2TB = new System.Windows.Forms.TextBox();
-            this.prefix2CB = new System.Windows.Forms.ComboBox();
             this.relasiRTB = new System.Windows.Forms.RichTextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.lanjutButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -96,55 +96,88 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pemberi Fiducia";
             // 
-            // label1
+            // prefix1CB
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nama";
+            this.prefix1CB.FormattingEnabled = true;
+            this.prefix1CB.Items.AddRange(new object[] {
+            "Tuan",
+            "Nyonya",
+            "Nona"});
+            this.prefix1CB.Location = new System.Drawing.Point(149, 30);
+            this.prefix1CB.Margin = new System.Windows.Forms.Padding(10);
+            this.prefix1CB.Name = "prefix1CB";
+            this.prefix1CB.Size = new System.Drawing.Size(51, 21);
+            this.prefix1CB.TabIndex = 13;
             // 
-            // label2
+            // alamat1TB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 66);
-            this.label2.Margin = new System.Windows.Forms.Padding(10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Kota Kelahiran";
+            this.alamat1TB.Location = new System.Drawing.Point(149, 228);
+            this.alamat1TB.Margin = new System.Windows.Forms.Padding(10);
+            this.alamat1TB.Name = "alamat1TB";
+            this.alamat1TB.Size = new System.Drawing.Size(234, 20);
+            this.alamat1TB.TabIndex = 12;
             // 
-            // label3
+            // label13
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 99);
-            this.label3.Margin = new System.Windows.Forms.Padding(10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tanggal Lahir";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(20, 231);
+            this.label13.Margin = new System.Windows.Forms.Padding(10);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 13);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Alamat Tinggal";
             // 
-            // label4
+            // tanggalKTP1DTP
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 132);
-            this.label4.Margin = new System.Windows.Forms.Padding(10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "NIK";
+            this.tanggalKTP1DTP.CustomFormat = "d-MM-yyyy";
+            this.tanggalKTP1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.tanggalKTP1DTP.Location = new System.Drawing.Point(149, 159);
+            this.tanggalKTP1DTP.Margin = new System.Windows.Forms.Padding(10);
+            this.tanggalKTP1DTP.Name = "tanggalKTP1DTP";
+            this.tanggalKTP1DTP.Size = new System.Drawing.Size(234, 20);
+            this.tanggalKTP1DTP.TabIndex = 10;
             // 
-            // label5
+            // nik1TB
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 165);
-            this.label5.Margin = new System.Windows.Forms.Padding(10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Tanggal Berlaku KTP";
+            this.nik1TB.Location = new System.Drawing.Point(149, 129);
+            this.nik1TB.Margin = new System.Windows.Forms.Padding(10);
+            this.nik1TB.Name = "nik1TB";
+            this.nik1TB.Size = new System.Drawing.Size(234, 20);
+            this.nik1TB.TabIndex = 9;
+            // 
+            // tanggalLahir1DTP
+            // 
+            this.tanggalLahir1DTP.CustomFormat = "d-MM-yyyy";
+            this.tanggalLahir1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.tanggalLahir1DTP.Location = new System.Drawing.Point(149, 93);
+            this.tanggalLahir1DTP.Margin = new System.Windows.Forms.Padding(10);
+            this.tanggalLahir1DTP.Name = "tanggalLahir1DTP";
+            this.tanggalLahir1DTP.Size = new System.Drawing.Size(234, 20);
+            this.tanggalLahir1DTP.TabIndex = 8;
+            // 
+            // kota1TB
+            // 
+            this.kota1TB.Location = new System.Drawing.Point(149, 63);
+            this.kota1TB.Margin = new System.Windows.Forms.Padding(10);
+            this.kota1TB.Name = "kota1TB";
+            this.kota1TB.Size = new System.Drawing.Size(234, 20);
+            this.kota1TB.TabIndex = 7;
+            // 
+            // nama1TB
+            // 
+            this.nama1TB.Location = new System.Drawing.Point(213, 30);
+            this.nama1TB.Margin = new System.Windows.Forms.Padding(10);
+            this.nama1TB.Name = "nama1TB";
+            this.nama1TB.Size = new System.Drawing.Size(170, 20);
+            this.nama1TB.TabIndex = 7;
+            // 
+            // pekerjaan1TB
+            // 
+            this.pekerjaan1TB.Location = new System.Drawing.Point(149, 195);
+            this.pekerjaan1TB.Margin = new System.Windows.Forms.Padding(10);
+            this.pekerjaan1TB.Name = "pekerjaan1TB";
+            this.pekerjaan1TB.Size = new System.Drawing.Size(234, 20);
+            this.pekerjaan1TB.TabIndex = 6;
             // 
             // label6
             // 
@@ -156,54 +189,55 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Pekerjaan";
             // 
-            // pekerjaan1TB
+            // label5
             // 
-            this.pekerjaan1TB.Location = new System.Drawing.Point(149, 195);
-            this.pekerjaan1TB.Margin = new System.Windows.Forms.Padding(10);
-            this.pekerjaan1TB.Name = "pekerjaan1TB";
-            this.pekerjaan1TB.Size = new System.Drawing.Size(234, 20);
-            this.pekerjaan1TB.TabIndex = 6;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(20, 165);
+            this.label5.Margin = new System.Windows.Forms.Padding(10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Tanggal Berlaku KTP";
             // 
-            // nama1TB
+            // label4
             // 
-            this.nama1TB.Location = new System.Drawing.Point(213, 30);
-            this.nama1TB.Margin = new System.Windows.Forms.Padding(10);
-            this.nama1TB.Name = "nama1TB";
-            this.nama1TB.Size = new System.Drawing.Size(170, 20);
-            this.nama1TB.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 132);
+            this.label4.Margin = new System.Windows.Forms.Padding(10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "NIK";
             // 
-            // kota1TB
+            // label3
             // 
-            this.kota1TB.Location = new System.Drawing.Point(149, 63);
-            this.kota1TB.Margin = new System.Windows.Forms.Padding(10);
-            this.kota1TB.Name = "kota1TB";
-            this.kota1TB.Size = new System.Drawing.Size(234, 20);
-            this.kota1TB.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 99);
+            this.label3.Margin = new System.Windows.Forms.Padding(10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tanggal Lahir";
             // 
-            // tanggalLahir1DTP
+            // label2
             // 
-            this.tanggalLahir1DTP.CustomFormat = "d M yyyy";
-            this.tanggalLahir1DTP.Location = new System.Drawing.Point(149, 93);
-            this.tanggalLahir1DTP.Margin = new System.Windows.Forms.Padding(10);
-            this.tanggalLahir1DTP.Name = "tanggalLahir1DTP";
-            this.tanggalLahir1DTP.Size = new System.Drawing.Size(234, 20);
-            this.tanggalLahir1DTP.TabIndex = 8;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Kota Kelahiran";
             // 
-            // nik1TB
+            // label1
             // 
-            this.nik1TB.Location = new System.Drawing.Point(149, 129);
-            this.nik1TB.Margin = new System.Windows.Forms.Padding(10);
-            this.nik1TB.Name = "nik1TB";
-            this.nik1TB.Size = new System.Drawing.Size(234, 20);
-            this.nik1TB.TabIndex = 9;
-            // 
-            // tanggalKTP1DTP
-            // 
-            this.tanggalKTP1DTP.Location = new System.Drawing.Point(149, 159);
-            this.tanggalKTP1DTP.Margin = new System.Windows.Forms.Padding(10);
-            this.tanggalKTP1DTP.Name = "tanggalKTP1DTP";
-            this.tanggalKTP1DTP.Size = new System.Drawing.Size(234, 20);
-            this.tanggalKTP1DTP.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nama";
             // 
             // groupBox2
             // 
@@ -231,8 +265,49 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Penyetuju";
             // 
+            // prefix2CB
+            // 
+            this.prefix2CB.FormattingEnabled = true;
+            this.prefix2CB.Items.AddRange(new object[] {
+            "Tuan",
+            "Nyonya",
+            "Nona"});
+            this.prefix2CB.Location = new System.Drawing.Point(149, 30);
+            this.prefix2CB.Margin = new System.Windows.Forms.Padding(10);
+            this.prefix2CB.Name = "prefix2CB";
+            this.prefix2CB.Size = new System.Drawing.Size(51, 21);
+            this.prefix2CB.TabIndex = 16;
+            // 
+            // nama2TB
+            // 
+            this.nama2TB.Location = new System.Drawing.Point(213, 30);
+            this.nama2TB.Margin = new System.Windows.Forms.Padding(10);
+            this.nama2TB.Name = "nama2TB";
+            this.nama2TB.Size = new System.Drawing.Size(170, 20);
+            this.nama2TB.TabIndex = 15;
+            // 
+            // alamat2TB
+            // 
+            this.alamat2TB.Location = new System.Drawing.Point(149, 228);
+            this.alamat2TB.Margin = new System.Windows.Forms.Padding(10);
+            this.alamat2TB.Name = "alamat2TB";
+            this.alamat2TB.Size = new System.Drawing.Size(234, 20);
+            this.alamat2TB.TabIndex = 14;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(20, 231);
+            this.label14.Margin = new System.Windows.Forms.Padding(10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(77, 13);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "Alamat Tinggal";
+            // 
             // tanggalKTP2DTP
             // 
+            this.tanggalKTP2DTP.CustomFormat = "d-MM-yyyy";
+            this.tanggalKTP2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.tanggalKTP2DTP.Location = new System.Drawing.Point(149, 159);
             this.tanggalKTP2DTP.Margin = new System.Windows.Forms.Padding(10);
             this.tanggalKTP2DTP.Name = "tanggalKTP2DTP";
@@ -249,6 +324,8 @@
             // 
             // tanggalLahir2DTP
             // 
+            this.tanggalLahir2DTP.CustomFormat = "d-MM-yyyy";
+            this.tanggalLahir2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.tanggalLahir2DTP.Location = new System.Drawing.Point(149, 93);
             this.tanggalLahir2DTP.Margin = new System.Windows.Forms.Padding(10);
             this.tanggalLahir2DTP.Name = "tanggalLahir2DTP";
@@ -331,42 +408,6 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Nama";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(20, 231);
-            this.label13.Margin = new System.Windows.Forms.Padding(10);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 13);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Alamat Tinggal";
-            // 
-            // alamat1TB
-            // 
-            this.alamat1TB.Location = new System.Drawing.Point(149, 228);
-            this.alamat1TB.Margin = new System.Windows.Forms.Padding(10);
-            this.alamat1TB.Name = "alamat1TB";
-            this.alamat1TB.Size = new System.Drawing.Size(234, 20);
-            this.alamat1TB.TabIndex = 12;
-            // 
-            // alamat2TB
-            // 
-            this.alamat2TB.Location = new System.Drawing.Point(149, 228);
-            this.alamat2TB.Margin = new System.Windows.Forms.Padding(10);
-            this.alamat2TB.Name = "alamat2TB";
-            this.alamat2TB.Size = new System.Drawing.Size(234, 20);
-            this.alamat2TB.TabIndex = 14;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(20, 231);
-            this.label14.Margin = new System.Windows.Forms.Padding(10);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 13);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Alamat Tinggal";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.relasiRTB);
@@ -379,6 +420,15 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
+            // relasiRTB
+            // 
+            this.relasiRTB.Location = new System.Drawing.Point(23, 60);
+            this.relasiRTB.Margin = new System.Windows.Forms.Padding(10);
+            this.relasiRTB.Name = "relasiRTB";
+            this.relasiRTB.Size = new System.Drawing.Size(783, 47);
+            this.relasiRTB.TabIndex = 2;
+            this.relasiRTB.Text = "";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -388,49 +438,6 @@
             this.label15.Size = new System.Drawing.Size(292, 13);
             this.label15.TabIndex = 1;
             this.label15.Text = "Relasi antara Penyetuju Fiducia dengan Pemberi Fiducia ini :";
-            // 
-            // prefix1CB
-            // 
-            this.prefix1CB.FormattingEnabled = true;
-            this.prefix1CB.Items.AddRange(new object[] {
-            "Tuan",
-            "Nyonya",
-            "Nona"});
-            this.prefix1CB.Location = new System.Drawing.Point(149, 30);
-            this.prefix1CB.Margin = new System.Windows.Forms.Padding(10);
-            this.prefix1CB.Name = "prefix1CB";
-            this.prefix1CB.Size = new System.Drawing.Size(51, 21);
-            this.prefix1CB.TabIndex = 13;
-            // 
-            // nama2TB
-            // 
-            this.nama2TB.Location = new System.Drawing.Point(213, 30);
-            this.nama2TB.Margin = new System.Windows.Forms.Padding(10);
-            this.nama2TB.Name = "nama2TB";
-            this.nama2TB.Size = new System.Drawing.Size(170, 20);
-            this.nama2TB.TabIndex = 15;
-            // 
-            // prefix2CB
-            // 
-            this.prefix2CB.FormattingEnabled = true;
-            this.prefix2CB.Items.AddRange(new object[] {
-            "Tuan",
-            "Nyonya",
-            "Nona"});
-            this.prefix2CB.Location = new System.Drawing.Point(149, 30);
-            this.prefix2CB.Margin = new System.Windows.Forms.Padding(10);
-            this.prefix2CB.Name = "prefix2CB";
-            this.prefix2CB.Size = new System.Drawing.Size(51, 21);
-            this.prefix2CB.TabIndex = 16;
-            // 
-            // relasiRTB
-            // 
-            this.relasiRTB.Location = new System.Drawing.Point(23, 60);
-            this.relasiRTB.Margin = new System.Windows.Forms.Padding(10);
-            this.relasiRTB.Name = "relasiRTB";
-            this.relasiRTB.Size = new System.Drawing.Size(783, 47);
-            this.relasiRTB.TabIndex = 2;
-            this.relasiRTB.Text = "";
             // 
             // lanjutButton
             // 

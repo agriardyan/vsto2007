@@ -33,9 +33,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,7 +46,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -62,19 +59,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lanjutButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.dateTimePicker3);
+            this.groupBox2.Controls.Add(this.dateTimePicker4);
             this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox10);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
             this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.dateTimePicker4);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.label7);
@@ -110,7 +110,7 @@
             this.textBox7.Location = new System.Drawing.Point(213, 30);
             this.textBox7.Margin = new System.Windows.Forms.Padding(10);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(170, 20);
+            this.textBox7.Size = new System.Drawing.Size(173, 20);
             this.textBox7.TabIndex = 15;
             // 
             // textBox10
@@ -118,7 +118,7 @@
             this.textBox10.Location = new System.Drawing.Point(149, 228);
             this.textBox10.Margin = new System.Windows.Forms.Padding(10);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(234, 20);
+            this.textBox10.Size = new System.Drawing.Size(237, 20);
             this.textBox10.TabIndex = 14;
             // 
             // label14
@@ -131,36 +131,20 @@
             this.label14.TabIndex = 13;
             this.label14.Text = "Alamat Tinggal";
             // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(149, 159);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(10);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(234, 20);
-            this.dateTimePicker3.TabIndex = 10;
-            // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(149, 129);
             this.textBox5.Margin = new System.Windows.Forms.Padding(10);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(234, 20);
+            this.textBox5.Size = new System.Drawing.Size(237, 20);
             this.textBox5.TabIndex = 9;
-            // 
-            // dateTimePicker4
-            // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(149, 93);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(10);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(234, 20);
-            this.dateTimePicker4.TabIndex = 8;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(149, 63);
             this.textBox6.Margin = new System.Windows.Forms.Padding(10);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(234, 20);
+            this.textBox6.Size = new System.Drawing.Size(237, 20);
             this.textBox6.TabIndex = 7;
             // 
             // textBox8
@@ -168,7 +152,7 @@
             this.textBox8.Location = new System.Drawing.Point(149, 195);
             this.textBox8.Margin = new System.Windows.Forms.Padding(10);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(234, 20);
+            this.textBox8.Size = new System.Drawing.Size(237, 20);
             this.textBox8.TabIndex = 6;
             // 
             // label7
@@ -233,10 +217,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -288,14 +272,6 @@
             this.label13.TabIndex = 11;
             this.label13.Text = "Alamat Tinggal";
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(149, 159);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(10);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(234, 20);
-            this.dateTimePicker2.TabIndex = 10;
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(149, 129);
@@ -306,6 +282,8 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "d-MM-yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(149, 93);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(10);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -414,7 +392,37 @@
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
             // 
-            // FormSaksiFiducia
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "d-MM-yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(149, 159);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(10);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(234, 20);
+            this.dateTimePicker2.TabIndex = 14;
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.CustomFormat = "d-MM-yyyy";
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(149, 93);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(10);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(237, 20);
+            this.dateTimePicker4.TabIndex = 17;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CustomFormat = "d-MM-yyyy";
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(149, 159);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(10);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(237, 20);
+            this.dateTimePicker3.TabIndex = 18;
+            // 
+            // FormSaksiFiducia_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -423,7 +431,7 @@
             this.Controls.Add(this.lanjutButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FormSaksiFiducia";
+            this.Name = "FormSaksiFiducia_4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSaksiFiducia";
             this.groupBox2.ResumeLayout(false);
@@ -441,9 +449,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label7;
@@ -456,7 +462,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox3;
@@ -470,5 +475,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button lanjutButton;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
