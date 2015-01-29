@@ -20,46 +20,18 @@ namespace Notaris2007.form
 
         private void lanjutButton_Click(object sender, EventArgs e)
         {
-            String[] read = dateTimePicker1.Text.Split('-');
-            String day = "";
-            String hari = Convert.ToString(dateTimePicker1.Value.DayOfWeek);
+            String day = BacaBilangan.changeToIndoDay(Convert.ToString(dateTimePicker1.Value.DayOfWeek));
+            String jam = comboBox1.Text + "." + comboBox2.Text;
 
-            switch (hari)
-            {
-                case "Monday":
-                    day = "Senin";
-                    break;
-                case "Tuesday":
-                    day = "Selasa";
-                    break;
-                case "Wednesday":
-                    day = "Rabu";
-                    break;
-                case "Thursday":
-                    day = "Kamis";
-                    break;
-                case "Friday":
-                    day = "Jumat";
-                    break;
-                case "Saturday":
-                    day = "Sabtu";
-                    break;
-                case "Sunday":
-                    day = "Minggu";
-                    break;
-                default :
-                    break;
-            }
+            String pembacaanHari = BacaBilangan.readTanggal(dateTimePicker1.Text);
 
-            String time = comboBox1.Text + "." + comboBox2.Text;
-
-            String pembacaan = BacaBilangan.changeNumericToWords(read[0]) + 
-                BacaBilangan.changeNumericToMonth(read[1]) +
-                BacaBilangan.changeNumericToWords(read[2]);
+            String pembacaanJam = BacaBilangan.readJam(jam);
 
             Globals.ThisAddIn.findReplace("$HARIAKTA", day);
             Globals.ThisAddIn.findReplace("$TANGGALAKTA", dateTimePicker1.Text);
-            Globals.ThisAddIn.findReplace("$PEMBACAANTANGGALAKTA", pembacaan);
+            Globals.ThisAddIn.findReplace("$PEMBACAANTANGGALAKTA", pembacaanHari);
+            Globals.ThisAddIn.findReplace("$JAMAKTA", jam);
+            Globals.ThisAddIn.findReplace("$PEMBACAANJAMAKTA", pembacaanJam);
             
             new FormPemberiFiducia_1().Visible = true;
             this.Visible = false;

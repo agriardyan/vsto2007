@@ -13,6 +13,66 @@ namespace Notaris2007.helper
             //empty constructor
         }
 
+        public static String readTanggal(String pTanggal)
+        {
+            String pembacaan = "";
+            String[] readDay = pTanggal.Split('-');
+            String pembacaanHari = BacaBilangan.changeNumericToWords(readDay[0]) +
+                BacaBilangan.changeNumericToMonth(readDay[1]) +
+                BacaBilangan.changeNumericToWords(readDay[2]);
+            return pembacaan;
+        }
+
+        public static String readJam(String pJam)
+        {
+            String[] readHour = pJam.Split('.');
+            String pembacaan = "";
+            if (readHour[1].Equals("00"))
+            {
+                pembacaan = BacaBilangan.changeNumericToWords(readHour[0]);
+            }
+            else
+            {
+                pembacaan = BacaBilangan.changeNumericToWords(readHour[0]) +
+                     " lebih " +
+                     BacaBilangan.changeNumericToWords(readHour[1]);
+            }
+            return pembacaan;
+        }
+
+        public static String changeToIndoDay(String pHari)
+        {
+            String day = "";
+            switch (pHari)
+            {
+                case "Monday":
+                    day = "Senin";
+                    break;
+                case "Tuesday":
+                    day = "Selasa";
+                    break;
+                case "Wednesday":
+                    day = "Rabu";
+                    break;
+                case "Thursday":
+                    day = "Kamis";
+                    break;
+                case "Friday":
+                    day = "Jumat";
+                    break;
+                case "Saturday":
+                    day = "Sabtu";
+                    break;
+                case "Sunday":
+                    day = "Minggu";
+                    break;
+                default:
+                    break;
+            }
+
+            return day;
+        }
+
         public static String changeNumericToMonth(String numb)
         {
             String result = "";
@@ -161,7 +221,7 @@ namespace Notaris2007.helper
                             pos = (numDigits % 3) + 1;
                             if (beginsZero)
                             {
-                                place = " ";
+                                place = "";
                             }
                             else
                             {
@@ -174,7 +234,7 @@ namespace Notaris2007.helper
                             pos = (numDigits % 4) + 1;
                             if (beginsZero)
                             {
-                                place = " ";
+                                place = "";
                             }
                             else
                             {
